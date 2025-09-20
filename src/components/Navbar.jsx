@@ -4,6 +4,7 @@ function Navbar() {
 
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [color, setColor] = useState(false); // camelCase better hai
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,13 +60,12 @@ function Navbar() {
           </div>
         </nav>
       )}
-      <h1 className={color ? "red" : "blue"}>Heading 1</h1>
-      <h1 className={color ? "red" : "blue"}>Heading 2</h1>
-      <h1 className={color ? "red" : "blue"}>Heading 3</h1>
+ <h1 className={`${color ? "red" : "blue"} mt-5`}>Heading 1</h1>
+<h1 className={color ? "red" : "blue"}>Heading 2</h1>
+<h1 className={color ? "red" : "blue"}>Heading 3</h1>
 
-      <button onClick={() => setColor(!color)}>
-        Change Color
-      </button>
+<button className="my" onClick={() => setColor(!color)}>asd</button>
+
     </>
   );
 }

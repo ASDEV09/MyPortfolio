@@ -4,9 +4,9 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import TechnologyExperties from './components/TechnologyExperties'
 import MyProjects from './components/MyProjects'
-const [color, setColor] = useState(false); // camelCase better hai
 
 function App() {
+
   return (
     <>
       <style>
@@ -17,7 +17,14 @@ function App() {
         .blue {
         color:blue;
         }
-        `}
+         .my {
+          background-image: url('61ci+uFswGL._AC_SL1500_.jpg');
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 400px;
+        }
+            `}
       </style>
       <Navbar />
       <Home />
